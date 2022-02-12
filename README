@@ -1,0 +1,43 @@
+**********Instalacion de paquetes extra***************
+
+pip install imutils
+pip install opencv-python
+
+
+copiar la carpeta datasmarts en el directorio que quieras clasificar 
+correr los comando fuera del directorio datasmarts
+
+**********Clasificador de fotos***********************
+░█████╗░██╗░░░░░░█████╗░░██████╗██╗███████╗██╗░█████╗░░█████╗░██████╗░░█████╗░██████╗░
+██╔══██╗██║░░░░░██╔══██╗██╔════╝██║██╔════╝██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗
+██║░░╚═╝██║░░░░░███████║╚█████╗░██║█████╗░░██║██║░░╚═╝███████║██║░░██║██║░░██║██████╔╝
+██║░░██╗██║░░░░░██╔══██║░╚═══██╗██║██╔══╝░░██║██║░░██╗██╔══██║██║░░██║██║░░██║██╔══██╗
+╚█████╔╝███████╗██║░░██║██████╔╝██║██║░░░░░██║╚█████╔╝██║░░██║██████╔╝╚█████╔╝██║░░██║
+░╚════╝░╚══════╝╚═╝░░╚═╝╚═════╝░╚═╝╚═╝░░░░░╚═╝░╚════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝
+
+En la linea se debe colocar la ubicación de la fotos que desea comprimir 
+
+    imagesPath = 'D:/test/'#Aqui colocas la ruta donde estan las fotos
+
+Al correr el archivo no se alcanzara a ver las fotos sin embargo el algoritmo trabaja
+
+    python datasmarts/clasificador.py
+
+**********Comparador de fotos ************************
+██████╗░███████╗███╗░░░███╗░█████╗░██╗░░░██╗███████╗  ██╗███╗░░░███╗░█████╗░░██████╗░███████╗░██████╗
+██╔══██╗██╔════╝████╗░████║██╔══██╗██║░░░██║██╔════╝  ██║████╗░████║██╔══██╗██╔════╝░██╔════╝██╔════╝
+██████╔╝█████╗░░██╔████╔██║██║░░██║╚██╗░██╔╝█████╗░░  ██║██╔████╔██║███████║██║░░██╗░█████╗░░╚█████╗░
+██╔══██╗██╔══╝░░██║╚██╔╝██║██║░░██║░╚████╔╝░██╔══╝░░  ██║██║╚██╔╝██║██╔══██║██║░░╚██╗██╔══╝░░░╚═══██╗
+██║░░██║███████╗██║░╚═╝░██║╚█████╔╝░░╚██╔╝░░███████╗  ██║██║░╚═╝░██║██║░░██║╚██████╔╝███████╗██████╔╝
+╚═╝░░╚═╝╚══════╝╚═╝░░░░░╚═╝░╚════╝░░░░╚═╝░░░╚══════╝  ╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚═════╝░╚══════╝╚═════╝░
+
+Una vez hayas descomprimido el archivo en tu ubicación favorita, puedes usar el script **datasmarts/create_dataset.py** para crear
+una copia con imágenes repetidas.
+Comando para ver las imagenes repetidas no usar a menos que quieres ver todas las imagenes
+
+    python datasmarts/detect_and_remove.py -d dataset -r 0
+
+
+Este comando se usa para borrar las fotos sin verlas no detener hasta que termine
+
+    python datasmarts/detect_and_remove.py -d dataset -r 1
